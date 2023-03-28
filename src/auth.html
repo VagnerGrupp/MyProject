@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Страница авторизации</title>
+</head>
+
+<body>
+    <h1 id="your-id-name">Авторизуйтесь для входа на "секретные" страницык</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Логин">
+    <br><br>
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Пароль">
+    <br><br>
+    <input type="button" value="Войти" onclick="login()">
+
+</body>
+
+<script>
+    function login() {
+        elem = document.getElementById('username');
+        username = elem.value;
+        if (username == "Bolvan") {
+            alert("Да, я Bolvan");
+            window.open("index.html", "_self");
+        } else {
+            alert("Ты не Bolvan,Ты ЕВНУХ!")
+        }
+        alert('Имя пользователя: ' + username);
+    }
+
+</script>
+
+</html>
